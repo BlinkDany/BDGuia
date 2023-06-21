@@ -17,13 +17,28 @@ public class ModeloConductores extends Conductores{
     String sql;
     
     public boolean crearConductor() {
-        sql = "INSERT INTO Conductor( IdConductor,cedulaPer,salario)"
+        sql = "INSERT INTO Conductor(IdConductor,cedulaPer,salario)"
                 + " VALUES (" + getIdConductor()
                 + "," + getCedulaPer()
                 + "," + getSalario()
                 + ")";
         return cpg.CRUD(sql);
     }
+    
+    public boolean ModificarConductor(){
+        
+        sql = "UPDATE Conductor "
+                + "SET cedulaPer = '" + getCedulaPer()+ "', salario = '" + getSalario()+ "'"+ "WHERE IdConductor = " + getIdConductor() + ";";
+        return cpg.CRUD(sql);
+    }
+    
+    public boolean EliminarConductor(){
+        
+        sql = "DELETE Conductor "
+                + "WHERE IdConductor = " + getIdConductor() + ";";
+        return cpg.CRUD(sql);
+    }
+    
     public List<Conductores> listarConductores (int cedu){
        List<Conductores> conduc = new ArrayList<>();
        try {
