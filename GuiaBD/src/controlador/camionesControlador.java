@@ -69,6 +69,64 @@ public class camionesControlador {
             }
 
         });
+        
+         VistaCamion.getTxtBuscar().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtBuscar().setText("");
+            }
+            
+        });
+         
+         VistaCamion.getTxtCodProvincia2().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtCodProvincia2().setText("");
+            }
+            
+        });
+         
+          VistaCamion.getTxtMarca().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtMarca().setText("");
+            }
+            
+        });
+          
+          VistaCamion.getTxtMatricula().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtMatricula().setText("");
+            }
+            
+        });
+          
+          
+          VistaCamion.getTxtModelo().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtModelo().setText("");
+            }
+            
+        });
+          
+          
+          VistaCamion.getTxtPotencia().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtPotencia().setText("");
+            }
+            
+        });
+          
+        
         VistaCamion.getBtnSalirdlg().addActionListener(l -> cerrarDialogo());
         VistaCamion.getBtnSalir().addActionListener(l -> VistaCamion.dispose());
         VistaCamion.getBtnCrear().addActionListener(l -> abrirDialogo("Crear"));

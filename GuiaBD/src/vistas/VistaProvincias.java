@@ -5,6 +5,12 @@
  */
 package vistas;
 
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author tatip
@@ -17,6 +23,160 @@ public class VistaProvincias extends javax.swing.JFrame {
     public VistaProvincias() {
         initComponents();
     }
+
+    public JButton getBtnAgregar() {
+        return btnAgregar;
+    }
+
+    public void setBtnAgregar(JButton btnAgregar) {
+        this.btnAgregar = btnAgregar;
+    }
+
+    public JButton getBtnGuardar() {
+        return btnGuardar;
+    }
+
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
+    }
+
+    public JButton getBtnLimpiar() {
+        return btnLimpiar;
+    }
+
+    public void setBtnLimpiar(JButton btnLimpiar) {
+        this.btnLimpiar = btnLimpiar;
+    }
+
+    public JButton getBtnSalir() {
+        return btnSalir;
+    }
+
+    public void setBtnSalir(JButton btnSalir) {
+        this.btnSalir = btnSalir;
+    }
+
+    public JButton getBtnSalirDlg() {
+        return btnSalirDlg;
+    }
+
+    public void setBtnSalirDlg(JButton btnSalirDlg) {
+        this.btnSalirDlg = btnSalirDlg;
+    }
+
+    public JDialog getDlg() {
+        return dlg;
+    }
+
+    public void setDlg(JDialog dlg) {
+        this.dlg = dlg;
+    }
+
+    public JLabel getLblBuscar() {
+        return lblBuscar;
+    }
+
+    public void setLblBuscar(JLabel lblBuscar) {
+        this.lblBuscar = lblBuscar;
+    }
+
+    public JLabel getLblCamion() {
+        return lblCamion;
+    }
+
+    public void setLblCamion(JLabel lblCamion) {
+        this.lblCamion = lblCamion;
+    }
+
+    public JLabel getLblCanton() {
+        return lblCanton;
+    }
+
+    public void setLblCanton(JLabel lblCanton) {
+        this.lblCanton = lblCanton;
+    }
+
+    public JLabel getLblConductor() {
+        return lblConductor;
+    }
+
+    public void setLblConductor(JLabel lblConductor) {
+        this.lblConductor = lblConductor;
+    }
+
+    public JLabel getLblDestinario() {
+        return lblDestinario;
+    }
+
+    public void setLblDestinario(JLabel lblDestinario) {
+        this.lblDestinario = lblDestinario;
+    }
+
+    public JLabel getLblEnvios() {
+        return lblEnvios;
+    }
+
+    public void setLblEnvios(JLabel lblEnvios) {
+        this.lblEnvios = lblEnvios;
+    }
+
+    public JLabel getLblPaquete() {
+        return lblPaquete;
+    }
+
+    public void setLblPaquete(JLabel lblPaquete) {
+        this.lblPaquete = lblPaquete;
+    }
+
+    public JLabel getLblRemitente() {
+        return lblRemitente;
+    }
+
+    public void setLblRemitente(JLabel lblRemitente) {
+        this.lblRemitente = lblRemitente;
+    }
+
+    public JLabel getLblViajes() {
+        return lblViajes;
+    }
+
+    public void setLblViajes(JLabel lblViajes) {
+        this.lblViajes = lblViajes;
+    }
+
+    public JTable getTblProvincias() {
+        return tblProvincias;
+    }
+
+    public void setTblProvincias(JTable tblProvincias) {
+        this.tblProvincias = tblProvincias;
+    }
+
+    public JTextField getTxtBuscar() {
+        return txtBuscar;
+    }
+
+    public void setTxtBuscar(JTextField txtBuscar) {
+        this.txtBuscar = txtBuscar;
+    }
+
+    public JTextField getTxtCodProvincia() {
+        return txtCodProvincia;
+    }
+
+    public void setTxtCodProvincia(JTextField txtCodProvincia) {
+        this.txtCodProvincia = txtCodProvincia;
+    }
+
+    public JTextField getTxtNombrePro() {
+        return txtNombrePro;
+    }
+
+    public void setTxtNombrePro(JTextField txtNombrePro) {
+        this.txtNombrePro = txtNombrePro;
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -34,7 +194,7 @@ public class VistaProvincias extends javax.swing.JFrame {
         btnLimpiar = new javax.swing.JButton();
         txtCodProvincia = new javax.swing.JTextField();
         txtNombrePro = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        btnSalirDlg = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         lblPaquete = new javax.swing.JLabel();
@@ -46,7 +206,7 @@ public class VistaProvincias extends javax.swing.JFrame {
         lblViajes = new javax.swing.JLabel();
         lblConductor = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblProvincias = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         lblBuscar = new javax.swing.JLabel();
@@ -94,12 +254,10 @@ public class VistaProvincias extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/salir32.jpg"))); // NOI18N
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
-            }
-        });
+        btnSalirDlg.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
+        btnSalirDlg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/salir32.jpg"))); // NOI18N
+        btnSalirDlg.setToolTipText("Salir");
+        btnSalirDlg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -109,7 +267,7 @@ public class VistaProvincias extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 1, Short.MAX_VALUE)
                         .addComponent(btnGuardar)
                         .addGap(18, 18, 18)
                         .addComponent(btnLimpiar))
@@ -118,17 +276,17 @@ public class VistaProvincias extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnSalirDlg)))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                    .addComponent(btnSalirDlg))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(txtCodProvincia, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(txtNombrePro, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -234,9 +392,9 @@ public class VistaProvincias extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTable1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        jTable1.setForeground(new java.awt.Color(0, 153, 255));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblProvincias.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
+        tblProvincias.setForeground(new java.awt.Color(0, 153, 255));
+        tblProvincias.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -252,7 +410,7 @@ public class VistaProvincias extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tblProvincias);
 
         jPanel2.setBackground(new java.awt.Color(153, 0, 204));
 
@@ -371,7 +529,7 @@ public class VistaProvincias extends javax.swing.JFrame {
     }//GEN-LAST:event_lblEnviosMouseEntered
 
     private void txtBuscarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtBuscarMouseClicked
-        txtBuscar.setText("");
+      
     }//GEN-LAST:event_txtBuscarMouseClicked
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
@@ -379,7 +537,7 @@ public class VistaProvincias extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void txtCodProvinciaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtCodProvinciaMouseClicked
-        txtCodProvincia.setText("");
+     
     }//GEN-LAST:event_txtCodProvinciaMouseClicked
 
     private void txtCodProvinciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodProvinciaActionPerformed
@@ -387,23 +545,19 @@ public class VistaProvincias extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCodProvinciaActionPerformed
 
     private void txtNombreProMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNombreProMouseClicked
-        // TODO add your handling code here:
+      
     }//GEN-LAST:event_txtNombreProMouseClicked
 
     private void txtNombreProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreProActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreProActionPerformed
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-      dlg.dispose();
-    }//GEN-LAST:event_jLabel3MouseClicked
-
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAgregarActionPerformed
 
     private void btnAgregarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarMouseClicked
-      dlg.setVisible(true);
+  
     }//GEN-LAST:event_btnAgregarMouseClicked
 
     /**
@@ -447,16 +601,15 @@ public class VistaProvincias extends javax.swing.JFrame {
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnSalirDlg;
     private javax.swing.JDialog dlg;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel lblBuscar;
     private javax.swing.JLabel lblCamion;
     private javax.swing.JLabel lblCanton;
@@ -466,6 +619,7 @@ public class VistaProvincias extends javax.swing.JFrame {
     private javax.swing.JLabel lblPaquete;
     private javax.swing.JLabel lblRemitente;
     private javax.swing.JLabel lblViajes;
+    private javax.swing.JTable tblProvincias;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtCodProvincia;
     private javax.swing.JTextField txtNombrePro;

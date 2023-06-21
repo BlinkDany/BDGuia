@@ -59,14 +59,32 @@ public class provinciaControlador {
             }
 
         });
-
+        
+        vista.getTxtCodProvincia().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               vista.getTxtCodProvincia().setText("");
+            }
+            
+        });
+        
+        vista.getTxtNombrePro().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               vista.getTxtNombrePro().setText("");
+            }
+            
+        });
+        
         vista.getBtnSalir().addActionListener(l -> vista.dispose());
+        
         vista.getBtnAgregar().addActionListener(l -> abrirDialogo("Crear"));
 
         vista.getBtnSalirDlg().addActionListener(l -> cerrarDialogo());
 
-        // Validaciones de entrada para los campos de texto
-        // Mostrar los datos iniciales en la tabla
+       
         mostrarDatosTabla();
     }
 

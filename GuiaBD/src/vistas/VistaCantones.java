@@ -35,7 +35,7 @@ public class VistaCantones extends javax.swing.JFrame {
         txtCodCantonPk = new javax.swing.JTextField();
         txtNombreCanton = new javax.swing.JTextField();
         txtCodProFK = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        btnSalirDlg = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         lblPaquete = new javax.swing.JLabel();
@@ -101,12 +101,10 @@ public class VistaCantones extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/salir32.jpg"))); // NOI18N
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
-            }
-        });
+        btnSalirDlg.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
+        btnSalirDlg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/salir32.jpg"))); // NOI18N
+        btnSalirDlg.setToolTipText("Salir");
+        btnSalirDlg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -128,23 +126,23 @@ public class VistaCantones extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnSalirDlg)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(btnSalirDlg))
                 .addGap(18, 18, 18)
                 .addComponent(txtCodProFK, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(txtCodCantonPk, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(txtNombreCanton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnGuardar)
                     .addComponent(btnLimpiar))
@@ -449,7 +447,7 @@ public class VistaCantones extends javax.swing.JFrame {
     }//GEN-LAST:event_lblEnviosMouseEntered
 
     private void txtBuscarCantonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtBuscarCantonMouseClicked
-        txtBuscarCanton.setText("");
+        
     }//GEN-LAST:event_txtBuscarCantonMouseClicked
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
@@ -473,23 +471,19 @@ public class VistaCantones extends javax.swing.JFrame {
     }//GEN-LAST:event_txtCodProFKActionPerformed
 
     private void txtCodProFKMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtCodProFKMouseClicked
-        txtCodProFK.setText("");
+  
     }//GEN-LAST:event_txtCodProFKMouseClicked
 
     private void txtCodCantonPkMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtCodCantonPkMouseClicked
-        txtCodCantonPk.setText("");
+       
     }//GEN-LAST:event_txtCodCantonPkMouseClicked
 
     private void txtNombreCantonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNombreCantonMouseClicked
-     txtNombreCanton.setText("");
+   
     }//GEN-LAST:event_txtNombreCantonMouseClicked
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-       dlg.dispose();
-    }//GEN-LAST:event_jLabel3MouseClicked
-
     private void btnAgregarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarMouseClicked
-        dlg.setVisible(true);
+      
     }//GEN-LAST:event_btnAgregarMouseClicked
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
@@ -537,10 +531,10 @@ public class VistaCantones extends javax.swing.JFrame {
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnSalirDlg;
     private javax.swing.JDialog dlg;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
