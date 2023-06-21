@@ -284,46 +284,6 @@ public class camionesControlador {
         }
     }
 
-   
-
-    ///////////////////////////
-   
-
-  /*  public void EliminarFactura() {
-
-        if (vista.getTblFactura().getSelectedRow() == -1) {
-
-            JOptionPane.showMessageDialog(null, "Seleccione la factura de la tabla que desea eliminar ",
-                    "Error", JOptionPane.ERROR_MESSAGE);
-        } else {
-
-            int x = JOptionPane.showConfirmDialog(null, "Estas seguro de eliminar la factura?", "Advertecia!", JOptionPane.YES_NO_OPTION);
-            if (x == 0) {
-
-                modeloFactura.setIdFactura(vista.getTblFactura().getValueAt(vista.getTblFactura().getSelectedRow(), 0).hashCode());
-
-                modeloDetalle.setFacturaDetalle(vista.getTblFactura().getValueAt(vista.getTblFactura().getSelectedRow(), 0).hashCode());
-
-                if (modeloFactura.ocultar()) {
-
-                    if (modeloDetalle.ocultar()) {
-
-                        JOptionPane.showMessageDialog(null, "Factura eliminada con exito ",
-                                "Eliminado", JOptionPane.INFORMATION_MESSAGE);
-
-                        mostrarDatosTablaFactura();
-
-                        mostrarDatosTablaDetalle();
-                    }
-
-                } else {
-
-                    JOptionPane.showMessageDialog(null, "No se ha podido eliminar la factura ",
-                            "Error", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        }
-    }*/
     
 }
 
