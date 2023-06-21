@@ -36,13 +36,15 @@ public class ConexionSQL {
 
         try {
             OracleDataSource ods = new OracleDataSource();
-            ods.setURL("jdbc:oracle:thin:@localhost:1521:XE");
-            ods.setUser("SYSTEM");
-            ods.setPassword("1234");
+            ods.setURL("jdbc:oracle:thin:@192.168.43.185:1521:XE");
+            ods.setUser("Daniel");
+            ods.setPassword("dan23");
             con = ods.getConnection();
             System.out.println("conectado");
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "¡Error de conexión!", null, JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getMessage());
+            System.out.println("ksjdghj");
         }
     }
 
