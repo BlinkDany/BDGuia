@@ -69,6 +69,64 @@ public class camionesControlador {
             }
 
         });
+        
+         VistaCamion.getTxtBuscar().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtBuscar().setText("");
+            }
+            
+        });
+         
+         VistaCamion.getTxtCodProvincia2().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtCodProvincia2().setText("");
+            }
+            
+        });
+         
+          VistaCamion.getTxtMarca().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtMarca().setText("");
+            }
+            
+        });
+          
+          VistaCamion.getTxtMatricula().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtMatricula().setText("");
+            }
+            
+        });
+          
+          
+          VistaCamion.getTxtModelo().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtModelo().setText("");
+            }
+            
+        });
+          
+          
+          VistaCamion.getTxtPotencia().addMouseListener(new MouseAdapter() {
+            @Override
+            
+            public void mouseClicked(MouseEvent e) {
+               VistaCamion.getTxtPotencia().setText("");
+            }
+            
+        });
+          
+        
         VistaCamion.getBtnSalirdlg().addActionListener(l -> cerrarDialogo());
         VistaCamion.getBtnSalir().addActionListener(l -> VistaCamion.dispose());
         VistaCamion.getBtnCrear().addActionListener(l -> abrirDialogo("Crear"));
@@ -284,46 +342,6 @@ public class camionesControlador {
         }
     }
 
-   
-
-    ///////////////////////////
-   
-
-  /*  public void EliminarFactura() {
-
-        if (vista.getTblFactura().getSelectedRow() == -1) {
-
-            JOptionPane.showMessageDialog(null, "Seleccione la factura de la tabla que desea eliminar ",
-                    "Error", JOptionPane.ERROR_MESSAGE);
-        } else {
-
-            int x = JOptionPane.showConfirmDialog(null, "Estas seguro de eliminar la factura?", "Advertecia!", JOptionPane.YES_NO_OPTION);
-            if (x == 0) {
-
-                modeloFactura.setIdFactura(vista.getTblFactura().getValueAt(vista.getTblFactura().getSelectedRow(), 0).hashCode());
-
-                modeloDetalle.setFacturaDetalle(vista.getTblFactura().getValueAt(vista.getTblFactura().getSelectedRow(), 0).hashCode());
-
-                if (modeloFactura.ocultar()) {
-
-                    if (modeloDetalle.ocultar()) {
-
-                        JOptionPane.showMessageDialog(null, "Factura eliminada con exito ",
-                                "Eliminado", JOptionPane.INFORMATION_MESSAGE);
-
-                        mostrarDatosTablaFactura();
-
-                        mostrarDatosTablaDetalle();
-                    }
-
-                } else {
-
-                    JOptionPane.showMessageDialog(null, "No se ha podido eliminar la factura ",
-                            "Error", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        }
-    }*/
     
 }
 
