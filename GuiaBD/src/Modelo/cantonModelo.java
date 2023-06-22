@@ -19,6 +19,7 @@ import java.util.logging.Logger;
  */
 public class cantonModelo extends  cantones{
     
+
     ConexionBD.ConexionSQL con = new ConexionSQL();
     
     public cantonModelo (){
@@ -29,7 +30,7 @@ public class cantonModelo extends  cantones{
 
         try {
 
-            String sql = "SELECT * FROM public.cantones";
+            String sql = "SELECT * FROM cantones";
 
             ResultSet rs = con.Consultas(sql);
 
@@ -58,7 +59,7 @@ public class cantonModelo extends  cantones{
 
     public boolean insertarCanton() {
 
-        String sql = "INSERT INTO public.cantones(\n"
+        String sql = "INSERT INTO cantones(\n"
                 + "	codCanton, codProvincia, nombreCanton)\n"
                 + "	VALUES ('" + getCodCantonPk()+ "','" + getCodProvinciaFk()+ "','" + getNombreCanton() + "');";
 
@@ -86,9 +87,34 @@ public class cantonModelo extends  cantones{
             return validar;
 
         } catch (SQLException ex) {
-            Logger.getLogger(cantones.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(cantonModelo.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
+    }
+     
+      public int CargarCodigoCanton() {
+        int codigo = 0;
+        String sql = "select max(codCanton) from cantones;";
+        ResultSet res = null;
+        try {
+            res = con.Consultas(sql);
+            while (res.next()) {
+                codigo = res.getInt("max") + 1;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(cantonModelo.class.getName()).log(Level.SEVERE, null, ex);
+
+        } finally {
+
+            if (res != null) {
+                try {
+                    res.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(cantonModelo.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+        return codigo;
     }
     
 }
