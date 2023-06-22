@@ -5,6 +5,12 @@
  */
 package vistas;
 
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author tatip
@@ -17,6 +23,208 @@ public class VistaCantones extends javax.swing.JFrame {
     public VistaCantones() {
         initComponents();
     }
+
+    public JLabel getLblBuscaCanton() {
+        return lblBuscaCanton;
+    }
+
+    public void setLblBuscaCanton(JLabel lblBuscaCanton) {
+        this.lblBuscaCanton = lblBuscaCanton;
+    }
+
+    public JLabel getLblBuscaProvincia() {
+        return lblBuscaProvincia;
+    }
+
+    public void setLblBuscaProvincia(JLabel lblBuscaProvincia) {
+        this.lblBuscaProvincia = lblBuscaProvincia;
+    }
+
+    public JButton getBtnAgregar() {
+        return btnAgregar;
+    }
+
+    public void setBtnAgregar(JButton btnAgregar) {
+        this.btnAgregar = btnAgregar;
+    }
+
+    public JButton getBtnGuardar() {
+        return btnGuardar;
+    }
+
+    public void setBtnGuardar(JButton btnGuardar) {
+        this.btnGuardar = btnGuardar;
+    }
+
+    public JButton getBtnLimpiar() {
+        return btnLimpiar;
+    }
+
+    public void setBtnLimpiar(JButton btnLimpiar) {
+        this.btnLimpiar = btnLimpiar;
+    }
+
+    public JButton getBtnSalir() {
+        return btnSalir;
+    }
+
+    public void setBtnSalir(JButton btnSalir) {
+        this.btnSalir = btnSalir;
+    }
+
+    public JButton getBtnSalirDlg() {
+        return btnSalirDlg;
+    }
+
+    public void setBtnSalirDlg(JButton btnSalirDlg) {
+        this.btnSalirDlg = btnSalirDlg;
+    }
+
+    public JDialog getDlg() {
+        return dlg;
+    }
+
+    public void setDlg(JDialog dlg) {
+        this.dlg = dlg;
+    }
+
+    public JLabel getLblBuscar() {
+        return lblBuscaCanton;
+    }
+
+    public void setLblBuscar(JLabel lblBuscar) {
+        this.lblBuscaCanton = lblBuscar;
+    }
+
+    public JLabel getLblBuscar1() {
+        return lblBuscaProvincia;
+    }
+
+    public void setLblBuscar1(JLabel lblBuscar1) {
+        this.lblBuscaProvincia = lblBuscar1;
+    }
+
+    public JLabel getLblCamion() {
+        return lblCamion;
+    }
+
+    public void setLblCamion(JLabel lblCamion) {
+        this.lblCamion = lblCamion;
+    }
+
+    public JLabel getLblConductor() {
+        return lblConductor;
+    }
+
+    public void setLblConductor(JLabel lblConductor) {
+        this.lblConductor = lblConductor;
+    }
+
+    public JLabel getLblDestinario() {
+        return lblDestinario;
+    }
+
+    public void setLblDestinario(JLabel lblDestinario) {
+        this.lblDestinario = lblDestinario;
+    }
+
+    public JLabel getLblEnvios() {
+        return lblEnvios;
+    }
+
+    public void setLblEnvios(JLabel lblEnvios) {
+        this.lblEnvios = lblEnvios;
+    }
+
+    public JLabel getLblPaquete() {
+        return lblPaquete;
+    }
+
+    public void setLblPaquete(JLabel lblPaquete) {
+        this.lblPaquete = lblPaquete;
+    }
+
+    public JLabel getLblProvincia() {
+        return lblProvincia;
+    }
+
+    public void setLblProvincia(JLabel lblProvincia) {
+        this.lblProvincia = lblProvincia;
+    }
+
+    public JLabel getLblRemitente() {
+        return lblRemitente;
+    }
+
+    public void setLblRemitente(JLabel lblRemitente) {
+        this.lblRemitente = lblRemitente;
+    }
+
+    public JLabel getLblViajes() {
+        return lblViajes;
+    }
+
+    public void setLblViajes(JLabel lblViajes) {
+        this.lblViajes = lblViajes;
+    }
+
+    public JTable getTblCantones() {
+        return tblCantones;
+    }
+
+    public void setTblCantones(JTable tblCantones) {
+        this.tblCantones = tblCantones;
+    }
+
+    public JTable getTblProvincia() {
+        return tblProvincia;
+    }
+
+    public void setTblProvincia(JTable tblProvincia) {
+        this.tblProvincia = tblProvincia;
+    }
+
+    public JTextField getTxtBuscarCanton() {
+        return txtBuscarCanton;
+    }
+
+    public void setTxtBuscarCanton(JTextField txtBuscarCanton) {
+        this.txtBuscarCanton = txtBuscarCanton;
+    }
+
+    public JTextField getTxtBuscarProvincia() {
+        return txtBuscarProvincia;
+    }
+
+    public void setTxtBuscarProvincia(JTextField txtBuscarProvincia) {
+        this.txtBuscarProvincia = txtBuscarProvincia;
+    }
+
+    public JTextField getTxtCodCantonPk() {
+        return txtCodCantonPk;
+    }
+
+    public void setTxtCodCantonPk(JTextField txtCodCantonPk) {
+        this.txtCodCantonPk = txtCodCantonPk;
+    }
+
+    public JTextField getTxtCodProFK() {
+        return txtCodProFK;
+    }
+
+    public void setTxtCodProFK(JTextField txtCodProFK) {
+        this.txtCodProFK = txtCodProFK;
+    }
+
+    public JTextField getTxtNombreCanton() {
+        return txtNombreCanton;
+    }
+
+    public void setTxtNombreCanton(JTextField txtNombreCanton) {
+        this.txtNombreCanton = txtNombreCanton;
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -47,17 +255,17 @@ public class VistaCantones extends javax.swing.JFrame {
         lblCamion = new javax.swing.JLabel();
         lblConductor = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblCantones = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnSalir = new javax.swing.JButton();
         btnAgregar = new javax.swing.JButton();
         txtBuscarProvincia = new javax.swing.JTextField();
-        lblBuscar1 = new javax.swing.JLabel();
+        lblBuscaProvincia = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        tblProvincia = new javax.swing.JTable();
         txtBuscarCanton = new javax.swing.JTextField();
-        lblBuscar = new javax.swing.JLabel();
+        lblBuscaCanton = new javax.swing.JLabel();
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -251,9 +459,9 @@ public class VistaCantones extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTable1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        jTable1.setForeground(new java.awt.Color(0, 153, 255));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblCantones.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
+        tblCantones.setForeground(new java.awt.Color(0, 153, 255));
+        tblCantones.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -269,9 +477,9 @@ public class VistaCantones extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(2).setHeaderValue("Nombre");
+        jScrollPane1.setViewportView(tblCantones);
+        if (tblCantones.getColumnModel().getColumnCount() > 0) {
+            tblCantones.getColumnModel().getColumn(2).setHeaderValue("Nombre");
         }
 
         jPanel2.setBackground(new java.awt.Color(153, 0, 204));
@@ -336,12 +544,12 @@ public class VistaCantones extends javax.swing.JFrame {
             }
         });
 
-        lblBuscar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/buscar32.png"))); // NOI18N
-        lblBuscar1.setToolTipText("Buscar");
+        lblBuscaProvincia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/buscar32.png"))); // NOI18N
+        lblBuscaProvincia.setToolTipText("Buscar");
 
-        jTable2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
-        jTable2.setForeground(new java.awt.Color(0, 153, 255));
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        tblProvincia.setFont(new java.awt.Font("Yu Gothic Medium", 1, 10)); // NOI18N
+        tblProvincia.setForeground(new java.awt.Color(0, 153, 255));
+        tblProvincia.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -357,7 +565,7 @@ public class VistaCantones extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(jTable2);
+        jScrollPane2.setViewportView(tblProvincia);
 
         txtBuscarCanton.setFont(new java.awt.Font("Yu Gothic Medium", 1, 12)); // NOI18N
         txtBuscarCanton.setText("Buscar Canton");
@@ -372,8 +580,8 @@ public class VistaCantones extends javax.swing.JFrame {
             }
         });
 
-        lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/buscar32.png"))); // NOI18N
-        lblBuscar.setToolTipText("Buscar");
+        lblBuscaCanton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/buscar32.png"))); // NOI18N
+        lblBuscaCanton.setToolTipText("Buscar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -384,11 +592,11 @@ public class VistaCantones extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addComponent(lblBuscar1)
+                        .addComponent(lblBuscaProvincia)
                         .addGap(18, 18, 18)
                         .addComponent(txtBuscarProvincia, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
-                        .addComponent(lblBuscar)
+                        .addComponent(lblBuscaCanton)
                         .addGap(18, 18, 18)
                         .addComponent(txtBuscarCanton))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -412,10 +620,10 @@ public class VistaCantones extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(lblBuscar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblBuscaProvincia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txtBuscarProvincia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(lblBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblBuscaCanton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txtBuscarCanton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -541,10 +749,8 @@ public class VistaCantones extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JLabel lblBuscar;
-    private javax.swing.JLabel lblBuscar1;
+    private javax.swing.JLabel lblBuscaCanton;
+    private javax.swing.JLabel lblBuscaProvincia;
     private javax.swing.JLabel lblCamion;
     private javax.swing.JLabel lblConductor;
     private javax.swing.JLabel lblDestinario;
@@ -553,6 +759,8 @@ public class VistaCantones extends javax.swing.JFrame {
     private javax.swing.JLabel lblProvincia;
     private javax.swing.JLabel lblRemitente;
     private javax.swing.JLabel lblViajes;
+    private javax.swing.JTable tblCantones;
+    private javax.swing.JTable tblProvincia;
     private javax.swing.JTextField txtBuscarCanton;
     private javax.swing.JTextField txtBuscarProvincia;
     private javax.swing.JTextField txtCodCantonPk;

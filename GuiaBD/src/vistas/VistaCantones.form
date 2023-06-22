@@ -208,11 +208,11 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                          <Component id="lblBuscar1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBuscaProvincia" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="txtBuscarProvincia" min="-2" pref="263" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="lblBuscar" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblBuscaCanton" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="txtBuscarCanton" max="32767" attributes="0"/>
                       </Group>
@@ -245,11 +245,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lblBuscar1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="lblBuscaProvincia" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtBuscarProvincia" alignment="1" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lblBuscar" alignment="0" max="32767" attributes="0"/>
+                          <Component id="lblBuscaCanton" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtBuscarCanton" alignment="1" min="-2" pref="41" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -412,7 +412,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable1">
+            <Component class="javax.swing.JTable" name="tblCantones">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic Medium" size="10" style="1"/>
@@ -547,7 +547,7 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtBuscarProvinciaMouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblBuscar1">
+        <Component class="javax.swing.JLabel" name="lblBuscaProvincia">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/vistas/Iconos/buscar32.png"/>
@@ -562,7 +562,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JTable" name="jTable2">
+            <Component class="javax.swing.JTable" name="tblProvincia">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Yu Gothic Medium" size="10" style="1"/>
@@ -609,7 +609,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBuscarCantonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="lblBuscar">
+        <Component class="javax.swing.JLabel" name="lblBuscaCanton">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/vistas/Iconos/buscar32.png"/>
