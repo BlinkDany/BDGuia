@@ -1,6 +1,7 @@
 package ConexionBD;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import oracle.jdbc.pool.OracleDataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -59,6 +60,17 @@ public class ConexionSQL {
             Logger.getLogger(ConexionSQL.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
+    }
+
+    public PreparedStatement Creae(String sql) {
+        PreparedStatement ps = null;
+        try {
+            ps = con.prepareStatement(sql);
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(ConexionSQL.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return ps;
     }
 
     public ResultSet Consultas(String SQL) {

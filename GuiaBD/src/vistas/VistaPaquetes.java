@@ -2,9 +2,9 @@ package vistas;
 
 
 
-public class VistaViajes extends javax.swing.JFrame {
+public class VistaPaquetes extends javax.swing.JFrame {
 
-    public VistaViajes() {
+    public VistaPaquetes() {
         initComponents();
     }
 
@@ -12,17 +12,21 @@ public class VistaViajes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        dialogRegistrar = new javax.swing.JDialog();
+        dialog = new javax.swing.JDialog();
+        jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         txtCod = new javax.swing.JTextField();
-        txtIdConductor = new LIB.FSTexFieldMD();
-        txtDate = new com.toedter.calendar.JDateChooser();
-        txtMatricula = new LIB.FSTexFieldMD();
+        txtPeso = new LIB.FSTexFieldMD();
         btnRegistrar = new javax.swing.JButton();
         btnLimp = new javax.swing.JButton();
         btnRegresar = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        txtDescripcion = new LIB.FSTexFieldMD();
+        txtDireccion = new LIB.FSTexFieldMD();
+        txtPrecio = new LIB.FSTexFieldMD();
+        txtRemitente = new LIB.FSTexFieldMD();
+        txtDestinatario = new LIB.FSTexFieldMD();
+        txtCanton = new LIB.FSTexFieldMD();
         jPanel3 = new javax.swing.JPanel();
         btnRemitente = new javax.swing.JButton();
         btnDestinatario = new javax.swing.JButton();
@@ -35,30 +39,40 @@ public class VistaViajes extends javax.swing.JFrame {
         btnEnvios = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         lblBuscar = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtBuscar = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblViajes = new javax.swing.JTable();
+        tblProducto = new javax.swing.JTable();
+
+        javax.swing.GroupLayout dialogLayout = new javax.swing.GroupLayout(dialog.getContentPane());
+        dialog.getContentPane().setLayout(dialogLayout);
+        dialogLayout.setHorizontalGroup(
+            dialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 519, Short.MAX_VALUE)
+        );
+        dialogLayout.setVerticalGroup(
+            dialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 389, Short.MAX_VALUE)
+        );
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(153, 102, 255));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 0, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Registrar Viajes");
+        jLabel2.setText("Registrar Paquetes");
 
-        txtIdConductor.setForeground(new java.awt.Color(0, 0, 0));
-        txtIdConductor.setBordeColorFocus(new java.awt.Color(0, 0, 0));
-        txtIdConductor.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        txtIdConductor.setPlaceholder("Id del conductor");
-
-        txtMatricula.setForeground(new java.awt.Color(0, 0, 0));
-        txtMatricula.setBordeColorFocus(new java.awt.Color(0, 0, 0));
-        txtMatricula.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
-        txtMatricula.setPlaceholder("Matricula");
+        txtPeso.setForeground(new java.awt.Color(0, 0, 0));
+        txtPeso.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtPeso.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtPeso.setPlaceholder("Peso");
 
         btnRegistrar.setBackground(new java.awt.Color(255, 255, 255));
         btnRegistrar.setFont(new java.awt.Font("Yu Gothic Medium", 1, 13)); // NOI18N
@@ -75,6 +89,36 @@ public class VistaViajes extends javax.swing.JFrame {
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/salir32.jpg"))); // NOI18N
         btnRegresar.setText("Salir");
 
+        txtDescripcion.setForeground(new java.awt.Color(0, 0, 0));
+        txtDescripcion.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtDescripcion.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtDescripcion.setPlaceholder("Descripcion");
+
+        txtDireccion.setForeground(new java.awt.Color(0, 0, 0));
+        txtDireccion.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtDireccion.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtDireccion.setPlaceholder("Direccion");
+
+        txtPrecio.setForeground(new java.awt.Color(0, 0, 0));
+        txtPrecio.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtPrecio.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtPrecio.setPlaceholder("Precio");
+
+        txtRemitente.setForeground(new java.awt.Color(0, 0, 0));
+        txtRemitente.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtRemitente.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtRemitente.setPlaceholder("Remitente");
+
+        txtDestinatario.setForeground(new java.awt.Color(0, 0, 0));
+        txtDestinatario.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtDestinatario.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtDestinatario.setPlaceholder("Destinatario");
+
+        txtCanton.setForeground(new java.awt.Color(0, 0, 0));
+        txtCanton.setBordeColorFocus(new java.awt.Color(0, 0, 0));
+        txtCanton.setFont(new java.awt.Font("Yu Gothic Medium", 0, 14)); // NOI18N
+        txtCanton.setPlaceholder("Canton");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -82,18 +126,30 @@ public class VistaViajes extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtMatricula, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtIdConductor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtCod)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 819, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnRegresar)
+                        .addComponent(btnRegresar))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(223, 223, 223)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtRemitente, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(txtPrecio, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(txtCod, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtDescripcion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDestinatario, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtCanton, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(331, 331, 331)
                 .addComponent(btnRegistrar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnLimp)
@@ -107,35 +163,29 @@ public class VistaViajes extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(btnRegresar))
                 .addGap(18, 18, 18)
-                .addComponent(txtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(txtCod, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtDestinatario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(txtDate, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtRemitente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCanton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(txtIdConductor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(txtMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnRegistrar)
                     .addComponent(btnLimp))
-                .addGap(43, 43, 43))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        javax.swing.GroupLayout dialogRegistrarLayout = new javax.swing.GroupLayout(dialogRegistrar.getContentPane());
-        dialogRegistrar.getContentPane().setLayout(dialogRegistrarLayout);
-        dialogRegistrarLayout.setHorizontalGroup(
-            dialogRegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        dialogRegistrarLayout.setVerticalGroup(
-            dialogRegistrarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(255, 255, 255));
-
-        jPanel1.setBackground(new java.awt.Color(153, 102, 255));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -218,16 +268,16 @@ public class VistaViajes extends javax.swing.JFrame {
                 .addComponent(btnCanton, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnViajes, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Viajes");
+        jLabel1.setText("Paquetes");
 
         lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/Iconos/buscar32.png"))); // NOI18N
 
-        jTextField1.setText("Buscar");
+        txtBuscar.setText("Buscar");
 
         btnGuardar.setBackground(new java.awt.Color(255, 255, 255));
         btnGuardar.setFont(new java.awt.Font("Yu Gothic Medium", 1, 13)); // NOI18N
@@ -246,26 +296,26 @@ public class VistaViajes extends javax.swing.JFrame {
 
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
 
-        tblViajes.setModel(new javax.swing.table.DefaultTableModel(
+        tblProducto.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Codigo", "Fecha", "Conductor", "Matricula"
+                "Codigo", "Descripcion", "Direccion", "Peso", "Precio", "Remitente", "Destinatario", "Canton"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblViajes);
+        jScrollPane1.setViewportView(tblProducto);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -280,15 +330,16 @@ public class VistaViajes extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(lblBuscar)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 118, Short.MAX_VALUE)
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
                         .addComponent(btnGuardar)
                         .addGap(18, 18, 18)
                         .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jSeparator1)
-                    .addComponent(jScrollPane1))
+                    .addComponent(jScrollPane1)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -303,12 +354,14 @@ public class VistaViajes extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblBuscar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.Alignment.TRAILING)))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 594, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(10, 10, 10))
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -343,7 +396,7 @@ public class VistaViajes extends javax.swing.JFrame {
     public static javax.swing.JButton btnRemitente;
     public static javax.swing.JButton btnSalir;
     public static javax.swing.JButton btnViajes;
-    public static javax.swing.JDialog dialogRegistrar;
+    public static javax.swing.JDialog dialog;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -351,12 +404,16 @@ public class VistaViajes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    public static javax.swing.JTextField jTextField1;
     public static javax.swing.JLabel lblBuscar;
-    public static javax.swing.JTable tblViajes;
+    public static javax.swing.JTable tblProducto;
+    public static javax.swing.JTextField txtBuscar;
+    public static LIB.FSTexFieldMD txtCanton;
     public static javax.swing.JTextField txtCod;
-    public static com.toedter.calendar.JDateChooser txtDate;
-    public static LIB.FSTexFieldMD txtIdConductor;
-    public static LIB.FSTexFieldMD txtMatricula;
+    public static LIB.FSTexFieldMD txtDescripcion;
+    public static LIB.FSTexFieldMD txtDestinatario;
+    public static LIB.FSTexFieldMD txtDireccion;
+    public static LIB.FSTexFieldMD txtPeso;
+    public static LIB.FSTexFieldMD txtPrecio;
+    public static LIB.FSTexFieldMD txtRemitente;
     // End of variables declaration//GEN-END:variables
 }
